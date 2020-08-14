@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "c5e19557-3cf6-4291-95b5-cce51a5f2c61",
+		"name": "PointOfSale",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetClientAll",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImV2YXJpc3RvY3Vlc3RhIiwiZW1haWwiOiJjb250YWN0b0BldmFyaXN0b2N1ZXN0YS5jb20iLCJuYmYiOjE1OTcyNTE3MTIsImV4cCI6MTU5Nzg1MTcxMiwiaWF0IjoxNTk3MjUxNzEyLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo0NDM5NS8iLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0NDM5NS8ifQ.6xGeh6sXxoaobLbTEVXs-P_56afiLE2xrzFqW6IgLU8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44395/api/client",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetClientById",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImV2YXJpc3RvY3Vlc3RhIiwiZW1haWwiOiJjb250YWN0b0BldmFyaXN0b2N1ZXN0YS5jb20iLCJuYmYiOjE1OTcyNTE3MTIsImV4cCI6MTU5Nzg1MTcxMiwiaWF0IjoxNTk3MjUxNzEyLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo0NDM5NS8iLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0NDM5NS8ifQ.6xGeh6sXxoaobLbTEVXs-P_56afiLE2xrzFqW6IgLU8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44395/api/client/4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"client",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddClient",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImV2YXJpc3RvY3Vlc3RhIiwiZW1haWwiOiJjb250YWN0b0BldmFyaXN0b2N1ZXN0YS5jb20iLCJuYmYiOjE1OTcyNTE3MTIsImV4cCI6MTU5Nzg1MTcxMiwiaWF0IjoxNTk3MjUxNzEyLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo0NDM5NS8iLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0NDM5NS8ifQ.6xGeh6sXxoaobLbTEVXs-P_56afiLE2xrzFqW6IgLU8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Name\": \"Yako\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44395/api/client",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateClient",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImV2YXJpc3RvY3Vlc3RhIiwiZW1haWwiOiJjb250YWN0b0BldmFyaXN0b2N1ZXN0YS5jb20iLCJuYmYiOjE1OTcyNTE3MTIsImV4cCI6MTU5Nzg1MTcxMiwiaWF0IjoxNTk3MjUxNzEyLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo0NDM5NS8iLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0NDM5NS8ifQ.6xGeh6sXxoaobLbTEVXs-P_56afiLE2xrzFqW6IgLU8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Id\": 1,\r\n    \"Name\": \"Pajarito Pio Pio\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44395/api/client",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"client"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteClient",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImV2YXJpc3RvY3Vlc3RhIiwiZW1haWwiOiJjb250YWN0b0BldmFyaXN0b2N1ZXN0YS5jb20iLCJuYmYiOjE1OTcyNTE3MTIsImV4cCI6MTU5Nzg1MTcxMiwiaWF0IjoxNTk3MjUxNzEyLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo0NDM5NS8iLCJhdWQiOiJodHRwczovL2xvY2FsaG9zdDo0NDM5NS8ifQ.6xGeh6sXxoaobLbTEVXs-P_56afiLE2xrzFqW6IgLU8",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44395/api/client/9",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"client",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"evaristocuesta\",\r\n    \"password\": \"Password1234!\",\r\n    \"email\": \"contacto@evaristocuesta.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44395/api/auth/register",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				},
+				"description": "    "
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"evaristocuesta\",\r\n    \"password\": \"Password1234!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44395/api/auth/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44395",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
