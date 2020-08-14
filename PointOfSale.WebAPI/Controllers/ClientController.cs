@@ -67,7 +67,7 @@ namespace PointOfSale.WebAPI.Controllers
         public async Task<IActionResult> AddAsync([FromBody] ClientRequest request)
         {
             Response response = new Response();
-            if (request == null)
+            if (!ModelState.IsValid || request == null)
                 return BadRequest();
             try
             {
@@ -92,7 +92,7 @@ namespace PointOfSale.WebAPI.Controllers
         public async Task<IActionResult> UpdateAsync([FromBody] ClientRequest request)
         {
             Response response = new Response();
-            if (request == null)
+            if (!ModelState.IsValid || request == null)
             {
                 response.Success = false;
                 response.Message = "Bad request";
