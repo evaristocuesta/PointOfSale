@@ -182,7 +182,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\": \"evaristocuesta\",\r\n    \"password\": \"Password1234!\",\r\n    \"email\": \"contacto@evaristocuesta.com\"\r\n}",
+					"raw": "{\r\n    \"username\": \"evaristocuesta\",\r\n    \"password\": \"changepass\",\r\n    \"email\": \"contacto@evaristocuesta.com\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -213,7 +213,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"username\": \"evaristocuesta\",\r\n    \"password\": \"Password1234!\"\r\n}",
+					"raw": "{\r\n    \"username\": \"evaristocuesta\",\r\n    \"password\": \"changepass\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
