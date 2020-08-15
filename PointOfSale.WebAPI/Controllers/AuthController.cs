@@ -79,7 +79,11 @@ namespace PointOfSale.WebAPI.Controllers
             var token = GenerateToken(identityUser);
             response.Success = true;
             response.Message = "Login successful";
-            response.Data = token;
+            response.Data = new LoginResponse 
+            { 
+                UserName = request.Username, 
+                Token = token 
+            };
             return Ok(response);
         }
 
@@ -96,7 +100,7 @@ namespace PointOfSale.WebAPI.Controllers
         }
 
 
-        private object GenerateToken(IdentityUser identityUser)
+        private string GenerateToken(IdentityUser identityUser)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(_jwtBearerTokenSettings.SecretKey);
