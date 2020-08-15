@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>{{ client != null ? 'Edit Client' : 'New Client'}}</h1>
+<div mat-dialog-content>
+    <mat-form-field>
+        <mat-label>Name</mat-label>
+        <input matInput [(ngModel)]="name">
+    </mat-form-field>
+</div>
+<div mat-dialog-actions>
+    <button mat-raised-button (click)="close()">Cancel</button>
+    <button mat-raised-button color="primary" (click)="client != null ? editClient() : addClient()">{{ client != null ? 'Edit' : 'Add'}}</button>
+</div>
