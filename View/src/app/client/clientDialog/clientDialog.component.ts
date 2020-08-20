@@ -27,6 +27,8 @@ export class ClientDialogComponent {
     }
 
     close() {
+        console.log('client dialog closed');
+        this.clientForm.reset();
         this.dialogRef.close();
     }
 
@@ -34,6 +36,7 @@ export class ClientDialogComponent {
         const client: Client = {id: 0, name: this.clientForm.value.name};
         this.apiClient.addClient(client).subscribe(response => {
             if (response.success) {
+                console.log('client added successful');
                 this.dialogRef.close();
                 this.snackBar.open(`Client ${client.name} added`, '', {
                     duration: 2000
@@ -46,6 +49,7 @@ export class ClientDialogComponent {
         const client: Client = {id: this.client.id, name: this.clientForm.value.name};
         this.apiClient.editClient(client).subscribe(response => {
             if (response.success) {
+                console.log('client edited successful');
                 this.dialogRef.close();
                 this.snackBar.open(`Client ${client.name} edited`, '', {
                     duration: 2000
